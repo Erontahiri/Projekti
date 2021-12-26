@@ -84,3 +84,42 @@ nav .search_box i::after {
 nav .search_box i:hover::after {
   width: 100%;
 }
+
+nav .bar {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+nav .bar i {
+  position: absolute;
+  color: #ffffff;
+  font-size: 35px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  nav {
+    display: block;
+    padding: 0;
+  }
+  nav .icon {
+    display: inline-block;
+    padding: 15px 30px;
+  }
+  nav .search_box {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  nav.search_box input {
+    width: 90%;
+  }
+  nav ol {
+    display: flex;
+    flex-direction: column;
+  }
+}
