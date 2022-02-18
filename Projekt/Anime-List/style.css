@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Font Awesome 5 Free", sans-serif;
 }
+body {
+  background-color: #393c58;
+}
 main {
   min-height: 900px;
   margin: auto;
@@ -105,24 +108,37 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   display: none;
 }
+
 .container {
   width: 900px;
   color: white;
   height: 850px;
   border: 2px solid rgb(0, 0, 0);
-  margin-top: 30px;
   margin: 0 auto;
   font-size: 19px;
+  display: flex;
+  padding: 8px;
+}
+.container a {
+  text-decoration: none;
+  color: white;
 }
 
 .list {
-  margin-top: 8px;
+  margin: 0 auto;
 }
 .list div {
   margin-top: 15px;
 }
 .list2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  margin: 0 auto;
+}
+.list2 div {
+  margin-top: 15px;
+}
+.list3 {
+  margin: 0 auto;
+}
+.list3 div {
+  margin-top: 15px;
 }
