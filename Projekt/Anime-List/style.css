@@ -5,6 +5,7 @@
   font-family: "Font Awesome 5 Free", sans-serif;
 }
 main {
+  min-height: 900px;
   margin: auto;
   padding: 0 auto;
   max-width: 1240px;
@@ -103,4 +104,25 @@ nav .bar i {
 input[type="checkbox"] {
   -webkit-appearance: none;
   display: none;
+}
+.container {
+  width: 900px;
+  color: white;
+  height: 850px;
+  border: 2px solid rgb(0, 0, 0);
+  margin-top: 30px;
+  margin: 0 auto;
+  font-size: 19px;
+}
+
+.list {
+  margin-top: 8px;
+}
+.list div {
+  margin-top: 15px;
+}
+.list2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
