@@ -22,22 +22,33 @@ nav ol {
 }
 
 nav ol li {
-  margin: 0 2px;
+  margin-bottom: 10px;
 }
 
 nav ol li a {
-  color: white;
   font-size: 20px;
   text-decoration: none;
   text-transform: capitalize;
   letter-spacing: 1px;
   padding: 5px 10px;
+  border-bottom: solid 0px #ffffff;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
-nav ol li:hover a {
-  border-bottom: solid 2px #ffffff;
-  transition-duration: 200ms;
-  behavior: smooth;
+nav ol li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+nav ol li a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 
 nav .search_box {
