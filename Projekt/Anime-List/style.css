@@ -5,7 +5,8 @@
   font-family: "Font Awesome 5 Free", sans-serif;
 }
 body {
-  background-color: #393c58;
+  background-image: url("../Privacy/Images/bgg.jpg");
+
 }
 main {
   min-height: 900px;
@@ -110,7 +111,7 @@ input[type="checkbox"] {
 }
 
 .container {
-  width: 900px;
+  width: 950px;
   color: white;
   height: 850px;
   border: 2px solid rgb(0, 0, 0);
@@ -118,12 +119,20 @@ input[type="checkbox"] {
   font-size: 19px;
   display: flex;
   padding: 8px;
-}
-.container a {
-  text-decoration: none;
-  color: white;
+  background-color: #2020209a;
 }
 
+.container a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.container a:hover{
+  color: white;
+  font-size: 20px;
+  transition: 100ms;
+}
 .list {
   margin: 0 auto;
 }

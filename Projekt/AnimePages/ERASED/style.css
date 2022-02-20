@@ -29,7 +29,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(90deg, #000000 0%, #000000 44%, #00000000 100%);
+  background: linear-gradient(90deg, #000000 0%, #000000 45%, #00000000 100%);
   z-index: -1;
 }
 
@@ -78,3 +78,4 @@ i {
   width: 50px;
   color: #dfdfdf;
 }
+  

@@ -35,8 +35,9 @@ nav ol li a {
 }
 
 nav ol li:hover a {
-  background: #ffffff;
-  color: #ed7474;
+  border-bottom: solid 2px #ffffff;
+  transition-duration: 200ms;
+  behavior: smooth;
 }
 
 nav .search_box {
