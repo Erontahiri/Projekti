@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
 * {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
@@ -55,6 +57,7 @@
   align-items: center;
   transition: all 0.3s ease-in-out;
 }
+
 .services-section__description h4::before {
   left: 0;
   content: "";
@@ -66,6 +69,93 @@
   transition: all 0.3s ease-in-out;
   background: url("./Images/Component\ 2.svg") no-repeat;
   background-size: cover;
+}
+
+/* only animate if the device supports hover */
+@media (hover: hover) {
+  #creditcard {
+    /*  set start position */
+    transform: translateY(110px);
+    transition: transform 0.1s ease-in-out;
+    /*  set transition for mouse enter & exit */
+  }
+
+  #money {
+    /*  set start position */
+    transform: translateY(180px);
+    transition: transform 0.1s ease-in-out;
+    /*  set transition for mouse enter & exit */
+  }
+
+  button:hover #creditcard {
+    transform: translateY(0px);
+    transition: transform 0.2s ease-in-out;
+    /*  overide transition for mouse enter */
+  }
+
+  button:hover #money {
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+    /*  overide transition for mouse enter */
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.button:hover .button__text span {
+  transform: translateY(-0.25rem);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* styling */
+
+.button {
+  border: none;
+  outline: none;
+  position: relative;
+  height: 100px;
+  border-radius: 11px;
+  letter-spacing: 0.7px;
+  font-size: 21px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  color: white;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button__svg {
+  position: absolute;
+  overflow: visible;
+  top: 80px;
+  right: 10rem;
+  height: 130%;
+}
+.block {
+  height: 100px;
+  width: 400px;
+}
+.text {
+  font-size: 18px;
+  border: 2px black;
+  color: black;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.text p {
+  font-size: 22px;
 }
 
 .services-section__item:hover .services-section__description {
