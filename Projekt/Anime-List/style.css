@@ -6,6 +6,9 @@
 }
 body {
   background-image: url("../Privacy/Images/bgg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 main {
   min-height: 900px;
@@ -17,7 +20,7 @@ main {
 nav {
   display: flex;
   width: 100%;
-  background: #c491ff;
+  background: #ed7474;
   position: relative;
   justify-content: space-between;
   text-align: center;
@@ -31,21 +34,32 @@ nav ol {
 }
 
 nav ol li {
-  margin: 0 2px;
+  margin-bottom: 10px;
 }
 
 nav ol li a {
-  color: white;
   font-size: 20px;
   text-decoration: none;
   text-transform: capitalize;
   letter-spacing: 1px;
   padding: 5px 10px;
+  border-bottom: solid 0px #ffffff;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
-nav ol li:hover a {
-  background: #ffffff;
-  color: #ed7474;
+nav ol li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+nav ol li a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 
 nav .search_box {
@@ -110,14 +124,14 @@ input[type="checkbox"] {
 }
 
 .container {
-  width: 950px;
+  width: 100%;
   color: white;
   height: 850px;
   border: 2px solid rgb(0, 0, 0);
-  margin: 0 auto;
+  margin: 10px;
   font-size: 19px;
   display: flex;
-  padding: 8px;
+  padding: 3px;
   background-color: #2020209a;
 }
 
@@ -150,3 +164,4 @@ input[type="checkbox"] {
 .list3 div {
   margin-top: 15px;
 }
+
