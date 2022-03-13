@@ -329,7 +329,7 @@
   color: #323232;
 }
 .main-collection__description {
-  margin-top: 70px;
+  margin-top: 30px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -337,15 +337,18 @@
   line-height: 27px;
   color: #606060;
   justify-content: flex-start;
+  
 }
 .btn-large {
-  max-width: 289px;
+  max-width: 280px;
   width: 100%;
-  padding: 5px 20px;
+  padding: 1px 15px;
   background-color: #ed7474;
   color: black;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 5px;
 }
 .main-collection__images {
   display: flex;
