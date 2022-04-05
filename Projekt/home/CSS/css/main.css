@@ -71,32 +71,25 @@
   background-size: cover;
 }
 
-/* only animate if the device supports hover */
 @media (hover: hover) {
   #creditcard {
-    /*  set start position */
     transform: translateY(110px);
     transition: transform 0.1s ease-in-out;
-    /*  set transition for mouse enter & exit */
   }
 
   #money {
-    /*  set start position */
     transform: translateY(180px);
     transition: transform 0.1s ease-in-out;
-    /*  set transition for mouse enter & exit */
   }
 
   button:hover #creditcard {
     transform: translateY(0px);
     transition: transform 0.2s ease-in-out;
-    /*  overide transition for mouse enter */
   }
 
   button:hover #money {
     transform: translateY(0px);
     transition: transform 0.3s ease-in-out;
-    /*  overide transition for mouse enter */
   }
 }
 

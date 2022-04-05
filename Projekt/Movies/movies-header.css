@@ -5,6 +5,10 @@
   font-family: "Font Awesome 5 Free", sans-serif;
 }
 
+.icon {
+  margin-bottom: 50px;
+}
+
 nav {
   display: flex;
   width: 100%;
