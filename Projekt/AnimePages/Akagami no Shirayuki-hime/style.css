@@ -1,16 +1,157 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
 * {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Font Awesome 5 Free", sans-serif;
   color: rgb(247, 247, 247);
 }
+
 body {
   position: relative;
   background: black;
   height: 100vh;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Font Awesome 5 Free", sans-serif;
+  color: rgb(247, 247, 247);
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background: #ed7474;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+nav ol {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ol li {
+  margin-bottom: 10px;
+}
+
+nav ol li a {
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-bottom: solid 0px #ffffff;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+nav ol li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+nav ol li a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+nav .search_box {
+  display: flex;
+  margin: auto 0;
+  height: 35px;
+  line-height: 35px;
+}
+
+nav .search_box input {
+  border: none;
+  outline: none;
+  background: #ffffff;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 20px;
+  width: 350px;
+}
+
+nav .search_box i {
+  color: #ed7474;
+  font-size: 20px;
+  background: #ffffff;
+  height: 100%;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  font-family: "Font Awesome 5 Free";
+  content: \f002;
+}
+
+nav .search_box i::after {
+  height: 100%;
+  width: 0%;
+  content: "";
+  background: rgb(100, 100, 190);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+nav .search_box i:hover::after {
+  width: 100%;
+}
+
+nav .bar {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+nav .bar i {
+  position: absolute;
+  color: #ffffff;
+  font-size: 35px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  nav {
+    display: block;
+    padding: 0;
+  }
+  nav .icon {
+    display: inline-block;
+    padding: 15px 30px;
+  }
+  nav .search_box {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  nav.search_box input {
+    width: 90%;
+  }
+  nav ol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .logo {
   width: 300px;
   text-align: center;
@@ -69,6 +210,20 @@ p {
   font-size: 30px;
   opacity: 0.8;
   cursor: pointer;
+}
+.back {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.back:hover {
+  opacity: 1;
 }
 
 .play:hover {

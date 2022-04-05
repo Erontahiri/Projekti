@@ -143,6 +143,7 @@
   font-family: "Lato", sans-serif;
   cursor: pointer;
   color: white;
+  margin-top: 150px;
 }
 
 .button:active {
@@ -331,7 +332,7 @@
 }
 .main-section__collections {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 100px;
 }
 .main-collection__title {
@@ -353,13 +354,14 @@
   justify-content: flex-start;
 }
 .btn-large {
-  max-width: 289px;
+  max-width: 140px;
+  max-height: 70px;
   width: 100%;
   padding: 5px 20px;
   background-color: #ed7474;
   color: black;
   text-align: center;
-  margin-top: 12px;
+  border-radius: 20px;
 }
 .main-collection__images {
   display: flex;
