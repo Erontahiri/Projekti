@@ -15,6 +15,13 @@ nav {
   padding: 20px 30px;
 }
 
+nav .icon {
+  max-width: 10px;
+  max-height: 10px;
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+
 nav ol {
   display: flex;
   list-style: none;

@@ -4,17 +4,9 @@
   box-sizing: border-box;
   font-family: "Font Awesome 5 Free", sans-serif;
 }
-body {
-  background-image: url("../Privacy/Images/bgg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-main {
-  min-height: 900px;
-  margin: auto;
-  padding: 0 auto;
-  max-width: 1240px;
+
+.icon {
+  margin-bottom: 50px;
 }
 
 nav {
@@ -25,6 +17,11 @@ nav {
   justify-content: space-between;
   text-align: center;
   padding: 20px 30px;
+}
+
+nav .icon {
+  max-width: 10px;
+  max-height: 10px;
 }
 
 nav ol {
@@ -57,6 +54,7 @@ nav ol li a::after {
   background: #000;
   transition: width 0.3s;
 }
+
 nav ol li a:hover::after {
   width: 100%;
   transition: width 0.3s;
@@ -123,44 +121,26 @@ input[type="checkbox"] {
   display: none;
 }
 
-.container {
-  width: 100%;
-  color: white;
-  height: 850px;
-  border: 2px solid rgb(0, 0, 0);
-  margin: 10px;
-  font-size: 19px;
-  display: flex;
-  padding: 3px;
-  background-color: #2020209a;
-}
-
-.container a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  z-index: 1;
-}
-
-.container a:hover {
-  color: white;
-  font-size: 20px;
-  transition: 100ms;
-}
-.list {
-  margin: 0 auto;
-}
-.list div {
-  margin-top: 15px;
-}
-.list2 {
-  margin: 0 auto;
-}
-.list2 div {
-  margin-top: 15px;
-}
-.list3 {
-  margin: 0 auto;
-}
-.list3 div {
-  margin-top: 15px;
+@media screen and (max-width: 1250px) {
+  nav {
+    display: block;
+    padding: 0;
+  }
+  nav .icon {
+    display: inline-block;
+    padding: 15px 30px;
+  }
+  nav .search_box {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  nav.search_box input {
+    width: 90%;
+  }
+  nav ol {
+    display: flex;
+    flex-direction: column;
+  }
 }

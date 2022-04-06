@@ -10,6 +10,19 @@
   padding: 0 auto;
   max-width: 1240px;
 }
+
+.services-section__title-1{
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 10px;
+  color: #323232;
+  margin-top: 100px ;
+
+  
+}
 .services-section {
   display: grid;
   row-gap: 40px;
@@ -71,32 +84,25 @@
   background-size: cover;
 }
 
-/* only animate if the device supports hover */
 @media (hover: hover) {
   #creditcard {
-    /*  set start position */
     transform: translateY(110px);
     transition: transform 0.1s ease-in-out;
-    /*  set transition for mouse enter & exit */
   }
 
   #money {
-    /*  set start position */
     transform: translateY(180px);
     transition: transform 0.1s ease-in-out;
-    /*  set transition for mouse enter & exit */
   }
 
   button:hover #creditcard {
     transform: translateY(0px);
     transition: transform 0.2s ease-in-out;
-    /*  overide transition for mouse enter */
   }
 
   button:hover #money {
     transform: translateY(0px);
     transition: transform 0.3s ease-in-out;
-    /*  overide transition for mouse enter */
   }
 }
 
@@ -130,6 +136,7 @@
   font-family: "Lato", sans-serif;
   cursor: pointer;
   color: white;
+  margin-top: 150px;
 }
 
 .button:active {
@@ -243,6 +250,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 100px;
+  max-width: 1240px;
 }
 .half-content__text-wrapper {
   display: flex;
@@ -317,7 +325,7 @@
 }
 .main-section__collections {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 100px;
 }
 .main-collection__title {
@@ -340,15 +348,24 @@
   
 }
 .btn-large {
+<<<<<<< HEAD
   max-width: 280px;
+=======
+  max-width: 140px;
+  max-height: 70px;
+>>>>>>> 7747a841b4221589db63a64cc3a1af08c306c37c
   width: 100%;
   padding: 1px 15px;
   background-color: #ed7474;
   color: black;
   text-align: center;
+<<<<<<< HEAD
   margin-top: 5px;
   margin-left: 20px;
   border-radius: 5px;
+=======
+  border-radius: 20px;
+>>>>>>> 7747a841b4221589db63a64cc3a1af08c306c37c
 }
 .main-collection__images {
   display: flex;
