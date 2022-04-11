@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(247, 247, 247);
+}
+body {
+  position:relative;
+  background: black;
+  height: 100vh;
+}
+.logo {
+  width: 300px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0.43vw;
+  padding-top: 20px;
+  margin-left: -40px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #000000 0%, #000000 45%, #00000000 100%);
+  z-index: -1;
+}
+
+.poster {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  z-index: -2;
+}
+
+.info {
+  width: 50%;
+  padding: 30px;
+  position: absolute;
+  top: 25%;
+}
+
+h1 {
+  font-size: 60px;
+  opacity: 0.8;
+}
+
+p {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  max-width: 800px;
+}
+
+.play {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.play:hover {
+  opacity: 1;
+}
+i {
+  width: 50px;
+  color: #dfdfdf;
+}
